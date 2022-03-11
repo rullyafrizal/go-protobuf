@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package user;
+
+option go_package="github.com/rullyafrizal/go-protobuf/user";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  Address address = 3;
+}
+
+message Address {
+  string street_name = 1;
+  int32 street_number = 2;
+  string post_code = 3;
+  string city = 4;
+  string state = 5;
+  string country = 6;
+}
